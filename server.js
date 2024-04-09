@@ -8,4 +8,7 @@ app.get("/", (req, res) => {
   res.send("Hello from Express backend!");
 });
 
+app.listen(port, () => {
+  console.log("server is running");
+});
 module.exports = app;
