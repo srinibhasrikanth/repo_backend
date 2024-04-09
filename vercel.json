@@ -1,0 +1,7 @@
+{
+    "version": 2,
+    "routes": [
+        { "handle": "vercel", "src": "/(.*)"},
+        { "src": "/.*", "dest": "/server.js"}
+    ]
+}
