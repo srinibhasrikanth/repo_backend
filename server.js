@@ -1,8 +1,11 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-
-app.get('/', (req, res) => {
-    res.send('Hello from Express backend!');
+const cors = require("cors");
+const port = 3000;
+app.use(express.json());
+app.use(cors());
+app.get("/", (req, res) => {
+  res.send("Hello from Express backend!");
 });
 
 module.exports = app;
