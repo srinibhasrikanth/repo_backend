@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const port = 3000;
+const port = 8000;
+const dotenv = require("dotenv");
+dotenv.config();
 app.use(express.json());
 app.use(cors());
 app.get("/", (req, res) => {
@@ -9,6 +11,6 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log("server is running");
+  console.log(`server running on ${port}`);
 });
 module.exports = app;
